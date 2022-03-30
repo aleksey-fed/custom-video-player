@@ -9,16 +9,18 @@
 </head>
 <body>
   <div class="container">
-    <div class="video-wrapper">
-      <video class="video" src="./assets/video/video.mp4"></video>
+    <div class="player">
+      <video class="player__video" src="./assets/video/video.mp4"></video>
 
-      <div class="video__control">
-        <button class="play"><img src="./assets/svg/play.svg" alt="play"></button>
-        <input class="progress" type="range" value="55" min="0" max="100"  step="1">
-        <button class="volume"><img src="./assets/svg/volume.svg" alt="volume"></button>
-        <input class="volume__level" type="range" value="40" min="0" max="100"  step="1">
+      <div class="player__controls">
+        <button class="play__btn toggle"></button>
+        <input class="progress" type="range" value="0" min="0" max="100"  step="1">
+        <button class="volume"></button>
+        <input class="volume__range" type="range" value="40" min="0" max="100"  step="1">
       </div>
     </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
